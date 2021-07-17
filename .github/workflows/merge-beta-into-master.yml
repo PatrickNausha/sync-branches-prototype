@@ -14,8 +14,8 @@ jobs:
           ref: master
       - name: Merge beta into master
         run: |
-            git fetch origin
-            git merge origin/beta
+          git fetch origin beta:beta
+          git reset --hard beta
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
