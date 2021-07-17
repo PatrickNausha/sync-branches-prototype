@@ -14,8 +14,8 @@ jobs:
           ref: beta
       - name: Merge stable into beta
         run: |
-            git fetch origin
-            git merge origin/stable
+          git fetch origin stable:stable
+          git reset --hard stable
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
