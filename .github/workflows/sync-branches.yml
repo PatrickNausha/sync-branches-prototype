@@ -14,7 +14,6 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.PAT }}
           commit-message: Update report
           branch: stable
           base: beta
