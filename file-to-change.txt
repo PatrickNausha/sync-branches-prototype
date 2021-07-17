@@ -6,3 +6,4 @@ push hotfix to stable 4
 push hotfix to stable 5
 push hotfix to stable 6
 push to master
+push hotfix to stable 7
