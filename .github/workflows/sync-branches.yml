@@ -13,7 +13,7 @@ jobs:
         with:
           ref: beta
       - name: Merge stable into beta
-        run: git merge stable
+        run: git merge origin/stable
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
