@@ -13,7 +13,7 @@ jobs:
         with:
           ref: beta
       - name: Merge stable into beta
-          run: |
+        run: |
             git fetch origin
             git merge origin/stable
       - name: Create Pull Request
