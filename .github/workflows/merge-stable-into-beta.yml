@@ -11,7 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: stable
+          ref: beta
+      - name: Merge stable into beta
+        run: |
+          git fetch origin stable:stable
+          git reset --hard stable
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
