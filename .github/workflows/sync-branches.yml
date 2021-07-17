@@ -16,8 +16,8 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: Update report
-          committer: AutoBuild <>
-          author: AutoBuild <>
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           branch: stable
           base: beta
           delete-branch: true
